@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+# Directory containing PF4J plugin JARs (ES impl shaded JARs)
+# Override with: --plugin.dir=/absolute/path/to/plugins
+plugin:
+  dir: ../es-plugins
+
+# Elasticsearch connection config — passed to plugins via ElasticsearchConnectionConfig bean
+# Override with: --es.host=my-es-host --es.port=9200 etc.
+es:
+  host: 172.23.104.20
+  port: 9200
+  scheme: http
+  username: elastic
+  password: meesho123
+  connect-timeout-ms: 5000
+  socket-timeout-ms: 30000
